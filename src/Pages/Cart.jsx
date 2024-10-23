@@ -28,22 +28,22 @@ export const Cart = () => {
             })}>Shop Now</button>
         </div>
           ):(
-            <div className='flex justify-between mt-40 mx-36 gap-8 w-[100vw]'>
-              <div className='flex flex-col w-7/12'>
+            <div className='flex flex-wrap justify-between mt-40 lg:mx-36 sm:mx-2 gap-8 w-[100vw]'>
+              <div className='flex flex-col lg:w-7/12 sm:w-full'>
                 {counterArray.map((post) => (
                   <CartPost post={post} key={post.id}/>
                 ))}
               </div>
               {/* <div>Accha from right</div> */}
-              <div className=' w-5/12 mt-4 flex flex-col gap-6 items-left justify-between'>
+              <div className='w-full mx-4 lg:w-4/12 mt-4 lg:flex lg:flex-col gap-6 md:w-full sm:w-full items-left justify-between'>
                 <div className=''>
                   <p className='uppercase text-green-600 font-bold text-lg'>Your cart</p>
                   <p className='uppercase text-green-600 font-bold text-5xl mb-4'>Summary</p>
                   <p className='text-xl text-gray-600 font-bold'>Total Items: <span className='font-normal text-black'>{counterArray.length}</span> </p>
                 </div>
-                <div className='flex flex-col gap-4'>
+                <div className='flex  flex-col gap-4 sm:w-full sm:flex sm:justify-center sm:items-center'>
                   <div className='font-bold text-gray-700 text-xl'>Total Amount: <span className='text-black'>${totalPrice.toFixed(2)}</span> </div>
-                  <button className='bg-green-700 mb-12 border border-green-700 text-white text-xl font-bold rounded py-4 w-full transition duration-500 hover:bg-white hover:text-green-700'>Checkout Now</button>
+                  <button className='bg-green-700 mb-12 border border-green-700 text-white text-xl font-bold rounded py-4 w-full transition duration-500 hover:bg-white hover:text-green-700 sm:w-full'>Checkout Now</button>
                 </div>
               </div>
             </div>

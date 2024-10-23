@@ -8,7 +8,7 @@ export const CartPost = (props) => {
     const dispatch = useDispatch();
     console.log('We came for', currPost);
   return (
-    <div className='flex gap-12 max-h-[300px] h-full border-b-2 p-4 pb-8 border-black'>
+    <div className='flex gap-12 w-full max-h-[300px] h-full border-b-2 p-4 pb-8 border-black'>
         <div className='w-[180px] max-h-[250px] flex justify-center items-center'>
             <img src={currPost.image} alt="" className='max-h-[250px] max-w-[180px]'/>
         </div>

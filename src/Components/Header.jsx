@@ -10,8 +10,8 @@ export const Header = () => {
     
     
   return (
-    <div className='bg-slate-900 fixed top-0 w-full min-w-80 scale-125 z-50'>
-            <div className='text-white flex flex-wrap justify-between mx-60 px-6 py-4 items-center'>
+    <div className='bg-slate-900 fixed top-0 w-full z-50'>
+            <div className='text-white flex flex-wrap justify-between lg:mx-60 lg:px-6 py-4 items-center sm:mx-32'>
                 <img src={logo} alt="" className='h-10 min-w-12'/>
                 <div className='flex gap-4 justify-center items-center'>
                     <p className='text-white hover:text-green-500 cursor-pointer transition duration-500' onClick={(() => {
